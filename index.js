@@ -10,6 +10,8 @@ import {
 let router = express.Router({
     mergeParams: true
 });
+console.log("Node Js app running");
+var z=100;
 
 router.get('/', permit('repositories'), catchError(repositoryController.index));
 
