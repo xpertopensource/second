@@ -10,6 +10,7 @@ import {
 let router = express.Router({
     mergeParams: true
 });
+ var x=10;
 
 router.get('/', permit('repositories'), catchError(repositoryController.index));
 
